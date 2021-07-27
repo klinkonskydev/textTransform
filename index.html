@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TEXT TRANSFORM | MAIN</title>
+</head>
+<body>
+    <main>
+        <section>
+            <textarea class="textarea" name="area" id="text-area" autofocus></textarea>
+        </section>
+
+        <div class="buttons">
+            <button class="btn" id="low" onclick="DOM.defaultCase()">Default</button>
+
+            <button class="btn" id="low" onclick="DOM.lowerCase()">lowercase</button>
+            <button class="btn" id="up" onclick="DOM.upperCase()">UPERCASE</button>
+            <button class="btn" id="camel" onclick="DOM.camelCase()">Camel Case</button>
+            
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="copy">&copy;KLINKONSKY</p>
+    </footer>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>

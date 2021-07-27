@@ -1,0 +1,128 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+* body {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "m m" "f f";
+  -ms-grid-rows: 1fr 5vh;
+      grid-template-rows: 1fr 5vh;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+* body main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: m;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body main .textarea {
+  width: 30vw;
+  height: 20vh;
+  border: none;
+  outline: none;
+  background: linear-gradient(140deg, #fff, #fff8, #fff3, #fff);
+  -webkit-box-shadow: 0 0 5px #0007;
+          box-shadow: 0 0 5px #0007;
+  border-radius: 7px;
+  padding: 5px;
+  font: 300 16px Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 900px) {
+  * body main .textarea {
+    width: 50vw;
+    height: 40vh;
+  }
+}
+
+* body main .buttons {
+  width: 100%;
+  height: 3vh;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body main .buttons .btn {
+  width: 7rem;
+  height: 3vh;
+  margin: 10px 0 0 10px;
+  border: none;
+  outline: none;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #000;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  color: #fff;
+  text-shadow: 0 0 5px black;
+}
+
+* body main .buttons .btn:hover {
+  border-bottom: 2px solid #f00;
+  background-color: #3e3efd;
+  color: white;
+  border-radius: 7px;
+}
+
+* body footer {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: f;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+* body footer .copy {
+  cursor: default;
+  font: bold 20px Arial, Helvetica, sans-serif;
+  background: linear-gradient(80deg, #0000ff, #3f3fff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+/*# sourceMappingURL=style.css.map */
